@@ -1,9 +1,11 @@
-const CACHE_NAME = "au-dela-histoire-v1";
+const CACHE_NAME = "au-dela-histoire-v2";
 const APP_SHELL = [
   "./",
   "./index.html",
   "./styles.css",
   "./app.js",
+  "./article.html",
+  "./article-page.js",
   "./site.webmanifest",
   "./assets/icon.svg"
 ];
