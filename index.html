@@ -60,9 +60,9 @@
 </section>
 </main>
 
-<footer><a class="brand footer-brand" href="#"><span class="brand-mark">AH</span><span><strong>AU-DELÀ</strong><small>DE L’HISTOIRE</small></span></a><p>Explorer. Comprendre. Vérifier.</p><small>© <span id="year"></span> Au-delà de l’Histoire. Tous droits réservés.</small></footer>
+<footer><a class="brand footer-brand" href="#"><span class="brand-mark">AH</span><span><strong>AU-DELÀ</strong><small>DE L’HISTOIRE</small></span></a><p>Explorer. Comprendre. Vérifier.</p><small>© <span id="year"></span> Au-delà de l’Histoire. Tous droits réservés. · <a href="admin.html">Administration</a></small></footer>
 <dialog id="articleDialog" class="article-dialog"><button class="dialog-close" id="dialogClose" aria-label="Fermer">×</button><div id="articleDetail"></div></dialog>
-<script src="app.js"></script>
+<script src="app.js"></script>\n<script type="module" src="public-data.js"></script>
 <script>
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(() => {}));
