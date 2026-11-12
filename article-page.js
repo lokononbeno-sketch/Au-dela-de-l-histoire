@@ -1,0 +1,52 @@
+const dossiers = [
+{ id:1, category:"Afrique oubliée", status:"Documenté — dossier introductif", title:"Le royaume du Dahomey : relire l’histoire depuis les archives", excerpt:"Palais, institutions, commerce et mémoire : quelques repères pour comprendre l’ancien royaume situé dans l’actuel Bénin.", sections:[
+["Un royaume dans l’histoire du golfe de Guinée","Le royaume du Dahomey s’est développé dans la région correspondant en grande partie au sud de l’actuelle République du Bénin. Son histoire s’étudie à partir de sources variées : traditions orales, archives administratives, récits de voyageurs, objets et sites historiques."],
+["Croiser les sources","Aucune source isolée ne suffit à raconter toute cette histoire. Il faut confronter les archives produites par les pouvoirs royaux, les témoignages extérieurs, les traditions orales et les recherches historiques contemporaines."],
+["Un patrimoine matériel","Les palais royaux d’Abomey constituent un point de départ matériel important pour étudier l’organisation politique, les arts de cour et la mémoire du royaume. Leur interprétation doit s’appuyer sur les travaux historiques et patrimoniaux disponibles."]
+], question:"Quelles sources locales, orales et matérielles permettent de compléter les récits écrits sur le Dahomey ?", sources:["UNESCO — Palais royaux d’Abomey : https://whc.unesco.org/","Archives et travaux universitaires sur l’histoire du Bénin à compléter par la rédaction."]},
+{ id:2, category:"Archives bibliques", status:"Documenté — dossier introductif", title:"Les manuscrits bibliques : comment les textes nous sont-ils parvenus ?", excerpt:"Comparer les témoins anciens permet de comprendre les variantes, les traductions et la transmission des textes.", sections:[
+["Une transmission manuscrite","La Bible n’est pas parvenue jusqu’à nous par un unique manuscrit original conservé intact. Les textes ont été copiés, traduits et transmis dans plusieurs langues et traditions."],
+["Étudier les variantes","Les spécialistes comparent les manuscrits disponibles pour étudier les variantes : omissions, différences de formulation, corrections et ajouts. Ces différences ne prouvent pas à elles seules l’existence d’une falsification coordonnée ; elles doivent être examinées passage par passage."],
+["Des témoins importants","Parmi les témoins étudiés figurent les manuscrits de la mer Morte, des codex grecs anciens et les traditions manuscrites éthiopiennes. Les comparer permet de retracer l’histoire complexe des textes."]
+], question:"Quelles différences précises apparaissent entre les témoins manuscrits d’un passage donné ?", sources:["Leon Levy Dead Sea Scrolls Digital Library : https://www.deadseascrolls.org.il/","Codex Sinaiticus : https://www.codexsinaiticus.org/"]},
+{ id:3, category:"Inventions controversées", status:"Débat — preuves techniques limitées", title:"Stanley Meyer et la voiture à eau : que peut-on vérifier ?", excerpt:"Un inventeur, une technologie médiatisée et des affirmations à confronter aux preuves techniques.", sections:[
+["L’affirmation","Stanley Meyer affirmait avoir conçu un système permettant d’utiliser l’eau pour alimenter un moteur grâce à la production d’hydrogène. Il est mort en 1998."],
+["Ce que les preuves permettent de dire","Les récits autour de sa mort et de son invention sont souvent présentés de manière spectaculaire. Les éléments publiquement rapportés ne démontrent pas qu’il a été assassiné, et les performances énergétiques extraordinaires annoncées n’ont pas été établies par des essais indépendants reproductibles."],
+["Le principe physique","Séparer l’eau en hydrogène et oxygène demande de l’énergie. L’eau n’est donc pas, à elle seule, un carburant gratuit. Toute affirmation d’un rendement exceptionnel doit être vérifiée par des mesures indépendantes."]
+], question:"Existe-t-il un protocole expérimental indépendant, reproductible et suffisamment documenté ?", sources:["Recherches techniques et documents judiciaires à retrouver et vérifier avant toute conclusion définitive."]},
+{ id:4, category:"Savoirs ancestraux", status:"À documenter", title:"Les savoirs botaniques en Afrique de l’Ouest", excerpt:"Documenter les usages traditionnels des plantes et distinguer les connaissances établies des affirmations non testées.", sections:[
+["Des savoirs transmis","Les connaissances botaniques se transmettent dans de nombreuses communautés par l’observation, la pratique et la tradition orale."],
+["Étudier sans idéaliser","Certaines plantes utilisées traditionnellement ont fait l’objet d’études pharmacologiques. Un usage traditionnel constitue une piste de recherche, pas automatiquement une preuve d’efficacité ou d’innocuité."],
+["Documenter précisément","Les enquêtes doivent identifier les espèces, les préparations, les dosages, les contextes d’usage et les risques éventuels."]
+], question:"Comment préserver les connaissances botaniques locales tout en vérifiant leur innocuité et leur efficacité ?", sources:["Publications ethnobotaniques et pharmacologiques à référencer par espèce et par étude."]},
+{ id:5, category:"Mystères du monde", status:"Recherche en cours", title:"Les profondeurs océaniques : ce que l’on sait et ce qui reste à explorer", excerpt:"Cartographier les fonds marins, observer les espèces et distinguer exploration, cartographie et connaissance complète.", sections:[
+["Plusieurs formes d’exploration","Les fonds océaniques sont vastes et difficiles d’accès. Il faut distinguer la cartographie des reliefs, l’observation directe, l’échantillonnage biologique et l’exploration détaillée d’un écosystème."],
+["Cartographier ne signifie pas tout connaître","Dire qu’une zone est cartographiée ne signifie pas que chaque organisme ou chaque phénomène qui s’y trouve est connu."],
+["Rester précis","Les découvertes continuent, mais les zones encore peu étudiées ne constituent pas une preuve que des créatures mythiques sont dissimulées."]
+], question:"Quelle part des fonds marins a été cartographiée à haute résolution, et selon quelle définition ?", sources:["Seabed 2030 : https://seabed2030.org/","NOAA Ocean Exploration : https://oceanexplorer.noaa.gov/"]},
+{ id:6, category:"Enquêtes", status:"Guide méthodologique", title:"Comment vérifier une affirmation historique ?", excerpt:"Une méthode simple pour examiner une archive, une vidéo virale ou un témoignage sans conclure trop vite.", sections:[
+["Identifier l’affirmation","Commencer par formuler précisément ce qui est affirmé : qui, quoi, où, quand et sur quelle base ?"],
+["Retrouver les sources","Rechercher la source primaire : document d’archive, publication scientifique, brevet, compte rendu officiel ou témoignage original."],
+["Comparer et qualifier","Comparer plusieurs sources indépendantes, vérifier les dates et le contexte, puis séparer ce qui est établi de ce qui reste incertain. Une absence de preuve n’est pas automatiquement une preuve de dissimulation."]
+], question:"Quelle preuve pourrait confirmer ou réfuter l’affirmation examinée ?", sources:["Bibliothèques nationales, archives publiques, revues scientifiques et documents originaux correspondant au sujet."]},
+{ id:7, category:"Actualités", status:"Veille éditoriale", title:"Découvertes historiques : suivre les annonces avec prudence", excerpt:"Une découverte annoncée doit être replacée dans son contexte scientifique avant d’être présentée comme une révolution.", sections:[
+["Une annonce n’est pas toujours une conclusion","Une annonce de découverte peut être préliminaire. Il faut rechercher la publication, l’équipe responsable, les méthodes employées et les évaluations indépendantes."],
+["Vérifier les publications","Les articles scientifiques, rapports de fouilles et communiqués institutionnels permettent de retrouver le contexte et les limites d’une découverte."],
+["Mettre à jour","Au-delà de l’Histoire privilégiera les informations datées et sourcées, et mettra à jour ses dossiers lorsque de nouveaux éléments fiables apparaissent."]
+], question:"La découverte a-t-elle été publiée, évaluée et confirmée par d’autres équipes ?", sources:["Publications scientifiques et rapports institutionnels propres à chaque découverte."]}
+];
+const esc = value => String(value).replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+const id = Number(new URLSearchParams(location.search).get("id"));
+const dossier = dossiers.find(item => item.id === id);
+const root = document.querySelector("#readingArticle");
+document.querySelector("#year").textContent = new Date().getFullYear();
+if (!dossier) {
+ root.innerHTML = '<div class="reading-empty"><h1>Dossier introuvable</h1><p>Ce dossier n’existe pas ou son adresse est incorrecte.</p><a class="btn btn-gold" href="index.html#articles">Retour aux dossiers</a></div>';
+} else {
+ document.title = dossier.title + " — Au-delà de l’Histoire";
+ document.querySelector('meta[name="description"]').content = dossier.excerpt;
+ document.querySelector("#readingCategory").textContent = dossier.category;
+ root.innerHTML = '<span class="kicker">'+esc(dossier.category)+'</span><p class="reading-status">'+esc(dossier.status)+'</p><h1>'+esc(dossier.title)+'</h1><p class="reading-lead">'+esc(dossier.excerpt)+'</p><div class="reading-rule"></div>'+dossier.sections.map(section=>'<section><h2>'+esc(section[0])+'</h2><p>'+esc(section[1])+'</p></section>').join('')+'<aside class="reading-question"><strong>La question à approfondir</strong><p>'+esc(dossier.question)+'</p></aside><section class="reading-sources"><h2>Sources et pistes documentaires</h2><ul>'+dossier.sources.map(source=>'<li>'+esc(source)+'</li>').join('')+'</ul></section><p class="reading-note">Note éditoriale : ce dossier est une base de travail. Les références et citations précises doivent être vérifiées et complétées avant publication comme enquête définitive.</p><button class="share-button" id="shareArticle">Partager ce dossier ↗</button>';
+ const share = document.querySelector("#shareArticle");
+ share.addEventListener("click", async()=>{const data={title:dossier.title,text:dossier.excerpt,url:location.href};try{if(navigator.share)await navigator.share(data);else{await navigator.clipboard.writeText(location.href);share.textContent="Lien copié ✓";}}catch(e){}});
+}
